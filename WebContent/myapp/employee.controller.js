@@ -39,7 +39,7 @@ sap.ui.controller("myapp.employee", {
 	
 	LogOutDoIt : function() {
 		firebase.auth().signOut();
-		window.location = 'login.html';
+		window.location = 'index.html';
 			},
 			
 	 onAfterRendering: function() {

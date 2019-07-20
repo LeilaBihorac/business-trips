@@ -35,7 +35,7 @@ sap.ui.controller("myapp.superior", {
 
 	LogOutDoIt : function() {
 		firebase.auth().signOut();
-		window.location = 'login.html';
+		window.location = 'index.html';
 			},
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
