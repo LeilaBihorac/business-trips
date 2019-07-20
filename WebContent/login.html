@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<script src="myapp/myview.view.js"> </script> 
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("myapp");
+				var app = new sap.m.App({initialPage:"idmyview1"});
+				var page = sap.ui.view({id:"idmyview1", viewName:"myapp.myview", type:sap.ui.core.mvc.ViewType.JS});
+				app.addPage(page);
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"> 
+		</div>
+
+	</body>
+	 <style>
+	 
+	 #__app0{
+	background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #ffffff 100%);
+	 background-color: #ffffff;
+	 }
+	 
+    #box0{
+    	margin-top : 150px;
+    	padding: 20px;
+    	height: 90px;
+    }
+    
+	#title-bdi{
+	   font-family:Arial;
+       font-size: 30px;
+       color: #403866;
+       line-height: 1.2;
+       text-align: center;
+       width: 100%;
+       display: block;
+       margin-bottom: 50px;
+		}
+		
+	 
+      
+	 #__data1{
+      width: 400px;
+      }
+
+     #__data2{
+      width: 400px;
+     }
+     
+      #__data3{
+      width: 400px;
+     }
+        #__data4{
+      width: 400px;
+     }
+     
+      #e-mail{
+ 
+      color: #403866;
+     
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+   
+     }
+    
+    #e-mail-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;
+     
+}
+
+	 #password{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+   }
+    
+    #password-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;  
+}
+    #__button0{
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 100%;
+    height: 62px;
+    }
+    
+    #__button0-inner{
+    color: #ffffff;
+    background-color: #827ffe;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #827ffe 0, #827ffe 50%, #827ffe 100%);
+     margin-top: 30px;
+  
+    }
+    
+     #__button1{
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 100%;
+    height: 62px;
+     margin-top: 15px;
+    }
+    
+    #__button1-inner{
+    color: #827ffe;
+    background-color: #827ffe;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #ffffff 100%);
+     margin-top: 30px;
+  
+    }
+    
+
+     }
+	</style> 
+	
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+	 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+  	 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+  	 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  	  <script src="index.js">  </script>
+
+</html> 
+

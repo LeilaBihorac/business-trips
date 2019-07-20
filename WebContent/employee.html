@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<script src="myapp/employee.view.js"> </script> 
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("myapp");
+				var app = new sap.m.App({initialPage:"idmyview1"});
+				var page = sap.ui.view({id:"idmyview1", viewName:"myapp.employee", type:sap.ui.core.mvc.ViewType.JS});
+				app.addPage(page);
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"> 
+		</div>
+	</body>
+	
+    <style>
+	 
+	 #__app0{
+	background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #ffffff 100%);
+	 background-color: #ffffff;
+	 }
+	 
+    #box1{
+    	margin-top : 150px;
+    	padding: 20px;
+    	height: 90px;
+    }
+    
+	
+		
+	 #__data1{
+      width: 400px;
+      }
+
+     #__data2{
+      width: 400px;
+     }
+     
+      #__data3{
+      width: 400px;
+     }
+     
+      #__data4{
+      width: 400px;
+     }
+     
+       #__data5{
+      width: 400px;
+     } 
+     
+      #__data6{
+      width: 190px;
+      margin-right: 10px;
+     }
+       #__data7{
+      width: 190px;
+      margin-left: 10px;
+     }
+     
+      #__data8{
+      width: 400px;
+     }
+     
+        #__data9{
+      width: 400px;
+     }
+     
+   
+     	#title-bdi{
+	   font-family:Arial;
+       font-size: 30px;
+       color: #403866;
+       line-height: 1.2;
+       text-align: center;
+       width: 100%;
+       display: block;
+       margin-bottom: 50px;
+		}
+     
+      #name{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+   
+     }
+    
+    #name-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;
+     
+}
+
+	 #surname{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 30px;
+   }
+    
+    #surname-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;  
+}
+
+
+	 #place{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+   }
+    
+    #place-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;  
+}
+	
+	#dateBox{
+    
+    	padding: 20px;
+    	height: 90px;
+    }
+
+	 #dateD{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+     
+   }
+    
+    #dateD-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 25px 0 25px;
+     font-family: Ubuntu-Bold;  
+}
+	 #dateA{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+   }
+    
+    #dateA-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 35px 0 25px;
+     font-family: Ubuntu-Bold;  
+}
+
+    #__button0{
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 100%;
+    height: 62px;
+    margin-top: 15px;
+    }
+    
+    #__button0-inner{
+    color: #ffffff;
+    background-color: #827ffe;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #827ffe 0, #827ffe 50%, #827ffe 100%);
+     margin-top: 30px;
+  
+    }
+    
+     #__button1{
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 100%;
+    height: 62px;
+     margin-top: 15px;
+    }
+    
+    #__button1-inner{
+    color: #827ffe;
+    background-color: #827ffe;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #ffffff 100%);
+     margin-top: 30px;
+  
+    }
+   
+    
+    
+
+     }
+	</style> 
+	
+ 	 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+	 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+  	 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+  	 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  	  <script src="index.js">  </script>
+
+	</html> 
+	

@@ -1,0 +1,43 @@
+ 
+ <!DOCTYPE HTML>
+<html>
+	<head>
+	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+		<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+		 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+	  	 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+	  	 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  		 <script src="index.js"></script>
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<script src="myapp/admin.view.js"> </script> 
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("myapp");
+				var app = new sap.m.App({initialPage:"idmyview1"});
+				var page = sap.ui.view({id:"idmyview1", viewName:"myapp.admin", type:sap.ui.core.mvc.ViewType.JS});
+				app.addPage(page);
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"> 
+		</div>
+	</body>
+	
+	<style>
+	
+	 
+	</style>
+</html>
+ 
+
+	  

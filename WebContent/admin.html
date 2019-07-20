@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+		
+		<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+		 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-auth.js"></script>
+	  	 <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+	  	 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+  		 <script src="index.js"></script>
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<script src="myapp/admin.view.js"> </script> 
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("myapp");
+				var app = new sap.m.App({initialPage:"idmyview1"});
+				var page = sap.ui.view({id:"idmyview1", viewName:"myapp.admin", type:sap.ui.core.mvc.ViewType.JS});
+				app.addPage(page);
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"> 
+		</div>
+		
+			</body>
+	
+	<style>
+	
+	 #__app0{
+		background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #ffffff 100%);
+		 background-color: #ffffff;
+	 }
+	 
+	 #title{
+	  width:25%;
+	  display: inline;
+	 }
+	 
+     #title-bdi{
+	   font-family:Arial;
+       font-size: 30px;
+       color: #403866;
+       line-height: 1.2;
+       display: block;
+       margin-bottom: 50px;
+       margin-top: 150px;
+       
+    }
+	
+	
+	 #listOfApproved{
+	  margin:auto;
+	 }
+	 
+	  #editBtn{
+	  width: 200px;
+	  margin-top: 10px;
+	   height: 70px;
+	
+	 }
+	 
+	
+	 
+	 
+	  #logOutBtn{
+	  	width: 400px;
+	    line-height: 1.2;
+	    text-transform: uppercase;
+	    height: 60px;
+	    margin-top: 10px;
+    }
+    
+    #logOutBtn-inner{
+	    color: #827ffe;
+	    background-color: #827ffe;
+	    height: 100%;
+	    background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #ffffff 100%);
+	    }
+	      
+	  #editBox{
+	  width: 50%;
+	  margin:auto;
+	  background-color: white;
+	  
+	 }
+	    #Info{
+	    margin-top: 15px;
+	    }
+	    
+	        
+      #hotelName{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+   
+     }
+    
+    #hotelName-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;
+     
+}
+
+	 #transport{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 30px;
+   }
+    
+    #transport-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;  
+}
+
+
+	 #documentation{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+   }
+    
+    #documentation-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;  
+}
+	
+	 #insurance{
+ 	  color: #403866;
+      display: block;
+      background: transparent;
+      height: 62px;
+      margin-bottom: 15px;
+   }
+    
+    #insurance-content{
+     background-color: #4b49544a;
+     border-color: #4b49544a;
+     border: 0px;
+     padding: 0 30px 0 38px;
+     font-family: Ubuntu-Bold;  
+}
+	
+
+    #submitBtn{
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 100%;
+    height: 62px;
+    margin-top: 15px;
+     margin-bottom:30px;
+    }
+    
+    #submitBtn-inner{
+    color: #ffffff;
+    background-color: #827ffe;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #827ffe 0, #827ffe 50%, #827ffe 100%);
+     margin-top: 30px;
+   
+    }
+    
+    #popUp{
+    width: "50%";
+    }
+	    
+	</style>
+</html>
