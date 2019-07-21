@@ -1,8 +1,10 @@
 {
-  "name": "business-trips",
+  "name": "myapp",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/LeilaBihorac/business-trips.git"
   },
-  "author": "Leila Bihorac",
+  "author": "LeilaBihorac",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LeilaBihorac/business-trips/issues"

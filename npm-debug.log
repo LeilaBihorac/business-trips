@@ -1,276 +1,1123 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', '-g', 'node' ]
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@openui5/sap.ui.core',
+1 verbose cli   '--save' ]
 2 info using npm@3.5.2
 3 info using node@v8.10.0
 4 silly loadCurrentTree Starting
 5 silly install loadCurrentTree
-6 silly install readGlobalPackageData
-7 silly fetchPackageMetaData node
-8 silly fetchNamedPackageData node
-9 silly mapToRegistry name node
-10 silly mapToRegistry using default registry
-11 silly mapToRegistry registry https://registry.npmjs.org/
-12 silly mapToRegistry uri https://registry.npmjs.org/node
-13 verbose request uri https://registry.npmjs.org/node
-14 verbose request no auth needed
-15 info attempt registry request try #1 at 11:37:06 AM
-16 verbose request id bdb2cd6dac005ea3
-17 verbose etag W/"04867d7939ba1631128f174cafd607f1"
-18 verbose lastModified Thu, 04 Jul 2019 02:01:55 GMT
-19 http request GET https://registry.npmjs.org/node
-20 http 304 https://registry.npmjs.org/node
-21 verbose headers { date: 'Sun, 21 Jul 2019 09:37:06 GMT',
-21 verbose headers   connection: 'keep-alive',
-21 verbose headers   'set-cookie':
-21 verbose headers    [ '__cfduid=db8dbd7a268cdac0e7aa13ddacbf477ea1563701826; expires=Mon, 20-Jul-20 09:37:06 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
-21 verbose headers   'cf-cache-status': 'HIT',
-21 verbose headers   'cache-control': 'max-age=300',
-21 verbose headers   'cf-ray': '4f9c31c00a8e90eb-ZAG',
-21 verbose headers   age: '95',
-21 verbose headers   etag: '"04867d7939ba1631128f174cafd607f1"',
-21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-21 verbose headers   'last-modified': 'Thu, 04 Jul 2019 02:01:55 GMT',
-21 verbose headers   vary: 'accept-encoding, accept',
-21 verbose headers   'x-amz-meta-rev': '483-964408f14c0301d3625c5c4d702f00b2',
-21 verbose headers   server: 'cloudflare' }
-22 silly get cb [ 304,
-22 silly get   { date: 'Sun, 21 Jul 2019 09:37:06 GMT',
-22 silly get     connection: 'keep-alive',
-22 silly get     'set-cookie':
-22 silly get      [ '__cfduid=db8dbd7a268cdac0e7aa13ddacbf477ea1563701826; expires=Mon, 20-Jul-20 09:37:06 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
-22 silly get     'cf-cache-status': 'HIT',
-22 silly get     'cache-control': 'max-age=300',
-22 silly get     'cf-ray': '4f9c31c00a8e90eb-ZAG',
-22 silly get     age: '95',
-22 silly get     etag: '"04867d7939ba1631128f174cafd607f1"',
-22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-22 silly get     'last-modified': 'Thu, 04 Jul 2019 02:01:55 GMT',
-22 silly get     vary: 'accept-encoding, accept',
-22 silly get     'x-amz-meta-rev': '483-964408f14c0301d3625c5c4d702f00b2',
-22 silly get     server: 'cloudflare' } ]
-23 verbose etag https://registry.npmjs.org/node from cache
-24 verbose get saving node to /home/leila/.npm/registry.npmjs.org/node/.cache.json
-25 silly install normalizeTree
-26 silly loadCurrentTree Finishing
-27 silly loadIdealTree Starting
-28 silly install loadIdealTree
-29 silly cloneCurrentTree Starting
-30 silly install cloneCurrentTreeToIdealTree
-31 silly cloneCurrentTree Finishing
-32 silly loadShrinkwrap Starting
-33 silly install loadShrinkwrap
-34 silly loadShrinkwrap Finishing
-35 silly loadAllDepsIntoIdealTree Starting
-36 silly install loadAllDepsIntoIdealTree
-37 silly resolveWithNewModule node@12.6.0 checking installable status
-38 silly cache add args [ 'node', null ]
-39 verbose cache add spec node
-40 silly cache add parsed spec Result {
-40 silly cache add   raw: 'node',
-40 silly cache add   scope: null,
-40 silly cache add   name: 'node',
-40 silly cache add   rawSpec: '',
-40 silly cache add   spec: 'latest',
-40 silly cache add   type: 'tag' }
-41 silly addNamed node@latest
-42 verbose addNamed "latest" is being treated as a dist-tag for node
-43 info addNameTag [ 'node', 'latest' ]
-44 silly mapToRegistry name node
-45 silly mapToRegistry using default registry
-46 silly mapToRegistry registry https://registry.npmjs.org/
-47 silly mapToRegistry uri https://registry.npmjs.org/node
-48 verbose addNameTag registry:https://registry.npmjs.org/node not in flight; fetching
-49 verbose get https://registry.npmjs.org/node not expired, no request
-50 silly addNameTag next cb for node with tag latest
-51 silly addNamed node@12.6.0
-52 verbose addNamed "12.6.0" is a plain semver version for node
-53 silly cache afterAdd node@12.6.0
-54 verbose afterAdd /home/leila/.npm/node/12.6.0/package/package.json not in flight; writing
-55 verbose afterAdd /home/leila/.npm/node/12.6.0/package/package.json written
-56 silly fetchNamedPackageData node-bin-setup
-57 silly mapToRegistry name node-bin-setup
-58 silly mapToRegistry using default registry
-59 silly mapToRegistry registry https://registry.npmjs.org/
-60 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
-61 verbose request uri https://registry.npmjs.org/node-bin-setup
-62 verbose request no auth needed
-63 info attempt registry request try #1 at 11:37:06 AM
-64 verbose etag W/"696d6ec470fda56a33885508a280edab"
-65 verbose lastModified Sun, 27 May 2018 09:55:03 GMT
-66 http request GET https://registry.npmjs.org/node-bin-setup
-67 http 304 https://registry.npmjs.org/node-bin-setup
-68 verbose headers { date: 'Sun, 21 Jul 2019 09:37:06 GMT',
-68 verbose headers   connection: 'keep-alive',
-68 verbose headers   'set-cookie':
-68 verbose headers    [ '__cfduid=db8dbd7a268cdac0e7aa13ddacbf477ea1563701826; expires=Mon, 20-Jul-20 09:37:06 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
-68 verbose headers   'cf-cache-status': 'HIT',
-68 verbose headers   'cache-control': 'max-age=300',
-68 verbose headers   'cf-ray': '4f9c31c10b2f90eb-ZAG',
-68 verbose headers   age: '94',
-68 verbose headers   etag: '"696d6ec470fda56a33885508a280edab"',
-68 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-68 verbose headers   'last-modified': 'Sun, 27 May 2018 09:55:03 GMT',
-68 verbose headers   vary: 'accept-encoding, accept',
-68 verbose headers   server: 'cloudflare' }
-69 silly get cb [ 304,
-69 silly get   { date: 'Sun, 21 Jul 2019 09:37:06 GMT',
-69 silly get     connection: 'keep-alive',
-69 silly get     'set-cookie':
-69 silly get      [ '__cfduid=db8dbd7a268cdac0e7aa13ddacbf477ea1563701826; expires=Mon, 20-Jul-20 09:37:06 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
-69 silly get     'cf-cache-status': 'HIT',
-69 silly get     'cache-control': 'max-age=300',
-69 silly get     'cf-ray': '4f9c31c10b2f90eb-ZAG',
-69 silly get     age: '94',
-69 silly get     etag: '"696d6ec470fda56a33885508a280edab"',
-69 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
-69 silly get     'last-modified': 'Sun, 27 May 2018 09:55:03 GMT',
-69 silly get     vary: 'accept-encoding, accept',
-69 silly get     server: 'cloudflare' } ]
-70 verbose etag https://registry.npmjs.org/node-bin-setup from cache
-71 verbose get saving node-bin-setup to /home/leila/.npm/registry.npmjs.org/node-bin-setup/.cache.json
-72 silly resolveWithNewModule node-bin-setup@1.0.6 checking installable status
-73 silly cache add args [ 'node-bin-setup@^1.0.0', null ]
-74 verbose cache add spec node-bin-setup@^1.0.0
-75 silly cache add parsed spec Result {
-75 silly cache add   raw: 'node-bin-setup@^1.0.0',
-75 silly cache add   scope: null,
-75 silly cache add   name: 'node-bin-setup',
-75 silly cache add   rawSpec: '^1.0.0',
-75 silly cache add   spec: '>=1.0.0 <2.0.0',
-75 silly cache add   type: 'range' }
-76 silly addNamed node-bin-setup@>=1.0.0 <2.0.0
-77 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for node-bin-setup
-78 silly addNameRange { name: 'node-bin-setup',
-78 silly addNameRange   range: '>=1.0.0 <2.0.0',
-78 silly addNameRange   hasData: false }
-79 silly mapToRegistry name node-bin-setup
-80 silly mapToRegistry using default registry
-81 silly mapToRegistry registry https://registry.npmjs.org/
-82 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
-83 verbose addNameRange registry:https://registry.npmjs.org/node-bin-setup not in flight; fetching
-84 verbose get https://registry.npmjs.org/node-bin-setup not expired, no request
-85 silly addNameRange number 2 { name: 'node-bin-setup',
-85 silly addNameRange   range: '>=1.0.0 <2.0.0',
-85 silly addNameRange   hasData: true }
-86 silly addNameRange versions [ 'node-bin-setup',
-86 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.6' ] ]
-87 silly addNamed node-bin-setup@1.0.6
-88 verbose addNamed "1.0.6" is a plain semver version for node-bin-setup
-89 silly cache afterAdd node-bin-setup@1.0.6
-90 verbose afterAdd /home/leila/.npm/node-bin-setup/1.0.6/package/package.json not in flight; writing
-91 verbose afterAdd /home/leila/.npm/node-bin-setup/1.0.6/package/package.json written
-92 silly loadAllDepsIntoIdealTree Finishing
-93 silly idealTree:prePrune lib
-93 silly idealTree:prePrune └─┬ node@12.6.0
-93 silly idealTree:prePrune   └── node-bin-setup@1.0.6
-94 silly loadIdealTree Finishing
-95 silly currentTree lib
-96 silly idealTree lib
-96 silly idealTree └─┬ node@12.6.0
-96 silly idealTree   └── node-bin-setup@1.0.6
-97 silly generateActionsToTake Starting
-98 silly install generateActionsToTake
-99 silly generateActionsToTake Finishing
-100 silly diffTrees action count 2
-101 silly diffTrees add node-bin-setup@1.0.6
-102 silly diffTrees add node@12.6.0
-103 silly decomposeActions action count 16
-104 silly decomposeActions fetch node-bin-setup@1.0.6
-105 silly decomposeActions extract node-bin-setup@1.0.6
-106 silly decomposeActions test node-bin-setup@1.0.6
-107 silly decomposeActions preinstall node-bin-setup@1.0.6
-108 silly decomposeActions build node-bin-setup@1.0.6
-109 silly decomposeActions install node-bin-setup@1.0.6
-110 silly decomposeActions postinstall node-bin-setup@1.0.6
-111 silly decomposeActions finalize node-bin-setup@1.0.6
-112 silly decomposeActions fetch node@12.6.0
-113 silly decomposeActions extract node@12.6.0
-114 silly decomposeActions test node@12.6.0
-115 silly decomposeActions preinstall node@12.6.0
-116 silly decomposeActions build node@12.6.0
-117 silly decomposeActions install node@12.6.0
-118 silly decomposeActions postinstall node@12.6.0
-119 silly decomposeActions finalize node@12.6.0
-120 silly executeActions Starting
-121 silly install executeActions
-122 silly doSerial global-install 0
-123 silly doParallel fetch 2
-124 verbose lock using /home/leila/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
-125 silly doParallel extract 2
-126 silly extract node-bin-setup@1.0.6
-127 silly extract node@12.6.0
-128 verbose unbuild lib/node_modules/.staging/node-bin-setup-e96ff650
-129 verbose unbuild lib/node_modules/.staging/node-120c5c5f
-130 silly gentlyRm /usr/local/lib/node_modules/.staging/node-bin-setup-e96ff650 is being purged from base /usr/local
-131 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-bin-setup-e96ff650
-132 verbose tar unpack /home/leila/.npm/node-bin-setup/1.0.6/package.tgz
-133 verbose tar unpacking to /usr/local/lib/node_modules/.staging/node-bin-setup-e96ff650
-134 silly gentlyRm /usr/local/lib/node_modules/.staging/node-bin-setup-e96ff650 is being purged
-135 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-bin-setup-e96ff650
-136 silly gentlyRm /usr/local/lib/node_modules/.staging/node-120c5c5f is being purged from base /usr/local
-137 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-120c5c5f
-138 silly gunzTarPerm modes [ '755', '644' ]
-139 verbose tar unpack /home/leila/.npm/node/12.6.0/package.tgz
-140 verbose tar unpacking to /usr/local/lib/node_modules/.staging/node-120c5c5f
-141 silly gentlyRm /usr/local/lib/node_modules/.staging/node-120c5c5f is being purged
-142 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-120c5c5f
-143 silly gunzTarPerm modes [ '755', '644' ]
-144 silly gunzTarPerm extractEntry package.json
-145 silly gunzTarPerm extractEntry package.json
-146 silly gunzTarPerm extractEntry index.js
-147 silly gunzTarPerm extractEntry installArchSpecificPackage.js
-148 silly gunzTarPerm extractEntry README.md
-149 silly gentlyRm /usr/local/lib/node_modules/.staging/node-bin-setup-e96ff650/node_modules is being purged
-150 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-bin-setup-e96ff650/node_modules
-151 silly gentlyRm /usr/local/lib/node_modules/.staging/node-120c5c5f/node_modules is being purged
-152 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/.staging/node-120c5c5f/node_modules
-153 silly doParallel preinstall 2
-154 silly preinstall node-bin-setup@1.0.6 /usr/local/lib/node_modules/.staging/node-bin-setup-e96ff650
-155 info lifecycle node-bin-setup@1.0.6~preinstall: node-bin-setup@1.0.6
-156 silly preinstall node@12.6.0 /usr/local/lib/node_modules/.staging/node-120c5c5f
-157 info lifecycle node@12.6.0~preinstall: node@12.6.0
-158 silly lifecycle node-bin-setup@1.0.6~preinstall: no script for preinstall, continuing
-159 warn lifecycle node@12.6.0~preinstall: cannot run in wd %s %s (wd=%s) node@12.6.0 node installArchSpecificPackage /usr/local/lib/node_modules/.staging/node-120c5c5f
-160 silly doReverseSerial remove 0
-161 silly doSerial move 0
-162 silly doSerial finalize 2
-163 silly finalize /usr/local/lib/node_modules/node/node_modules/node-bin-setup
-164 silly finalize /usr/local/lib/node_modules/node
-165 silly doSerial build 2
-166 silly build node-bin-setup@1.0.6
-167 info linkStuff node-bin-setup@1.0.6
-168 silly linkStuff node-bin-setup@1.0.6 has /usr/local/lib/node_modules/node/node_modules as its parent node_modules
-169 silly linkStuff node-bin-setup@1.0.6 is part of a global install
-170 silly linkStuff node-bin-setup@1.0.6 is installed into a global node_modules
-171 verbose linkBins node-bin-setup@1.0.6
-172 verbose linkMans node-bin-setup@1.0.6
-173 silly build node@12.6.0
-174 info linkStuff node@12.6.0
-175 silly linkStuff node@12.6.0 has /usr/local/lib/node_modules as its parent node_modules
-176 silly linkStuff node@12.6.0 is part of a global install
-177 silly linkStuff node@12.6.0 is installed into a global node_modules
-178 silly linkStuff node@12.6.0 is installed into the top-level global node_modules
-179 verbose linkBins node@12.6.0
-180 verbose link bins [ { node: 'bin/node' }, '/usr/local/bin', true ]
-181 verbose linkMans node@12.6.0
-182 verbose unlock done using /home/leila/.npm/_locks/staging-3a08f0df5026584d.lock for /usr/local/lib/node_modules/.staging
-183 silly rollbackFailedOptional Starting
-184 silly rollbackFailedOptional Finishing
-185 silly runTopLevelLifecycles Starting
-186 silly runTopLevelLifecycles Finishing
-187 silly install printInstalled
-188 verbose stack Error: ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/node/bin/node'
-189 verbose cwd /home/leila/eclipse-workspace/MyApp
-190 error Linux 4.18.0-25-generic
-191 error argv "/usr/bin/node" "/usr/bin/npm" "install" "-g" "node"
-192 error node v8.10.0
-193 error npm  v3.5.2
-194 error path /usr/local/lib/node_modules/node/bin/node
-195 error code ENOENT
-196 error errno -2
-197 error syscall chmod
-198 error enoent ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/node/bin/node'
-199 error enoent ENOENT: no such file or directory, chmod '/usr/local/lib/node_modules/node/bin/node'
-199 error enoent This is most likely not a problem with npm itself
-199 error enoent and is related to npm not being able to find a file.
-200 verbose exit [ -2, true ]
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @openui5/sap.ui.core
+8 silly fetchNamedPackageData @openui5/sap.ui.core
+9 silly mapToRegistry name @openui5/sap.ui.core
+10 silly mapToRegistry scope (from package name) @openui5
+11 verbose mapToRegistry no registry URL found in name for scope @openui5
+12 silly mapToRegistry using default registry
+13 silly mapToRegistry registry https://registry.npmjs.org/
+14 silly mapToRegistry uri https://registry.npmjs.org/@openui5%2fsap.ui.core
+15 verbose request uri https://registry.npmjs.org/@openui5%2fsap.ui.core
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 12:51:10 PM
+18 verbose request id e3b0577079ace313
+19 verbose etag W/"4047cb8e921d44f88211ad37ffc4156f"
+20 verbose lastModified Wed, 17 Jul 2019 15:14:50 GMT
+21 http request GET https://registry.npmjs.org/@openui5%2fsap.ui.core
+22 http 304 https://registry.npmjs.org/@openui5%2fsap.ui.core
+23 verbose headers { date: 'Sun, 21 Jul 2019 10:51:12 GMT',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'set-cookie':
+23 verbose headers    [ '__cfduid=de22d22e8e53b9eb3389712b8fedb3e3a1563706270; expires=Mon, 20-Jul-20 10:51:10 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+23 verbose headers   'cf-cache-status': 'HIT',
+23 verbose headers   'cache-control': 'public, max-age=300',
+23 verbose headers   'cf-ray': '4f9c9e3e8d52912d-ZAG',
+23 verbose headers   age: '4892',
+23 verbose headers   etag: '"4047cb8e921d44f88211ad37ffc4156f"',
+23 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 verbose headers   'last-modified': 'Wed, 17 Jul 2019 15:14:50 GMT',
+23 verbose headers   vary: 'Accept-Encoding',
+23 verbose headers   'x-amz-meta-rev': '222-2c6c53649f77dbf4b2d96072dff6da22',
+23 verbose headers   server: 'cloudflare' }
+24 silly get cb [ 304,
+24 silly get   { date: 'Sun, 21 Jul 2019 10:51:12 GMT',
+24 silly get     connection: 'keep-alive',
+24 silly get     'set-cookie':
+24 silly get      [ '__cfduid=de22d22e8e53b9eb3389712b8fedb3e3a1563706270; expires=Mon, 20-Jul-20 10:51:10 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+24 silly get     'cf-cache-status': 'HIT',
+24 silly get     'cache-control': 'public, max-age=300',
+24 silly get     'cf-ray': '4f9c9e3e8d52912d-ZAG',
+24 silly get     age: '4892',
+24 silly get     etag: '"4047cb8e921d44f88211ad37ffc4156f"',
+24 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+24 silly get     'last-modified': 'Wed, 17 Jul 2019 15:14:50 GMT',
+24 silly get     vary: 'Accept-Encoding',
+24 silly get     'x-amz-meta-rev': '222-2c6c53649f77dbf4b2d96072dff6da22',
+24 silly get     server: 'cloudflare' } ]
+25 verbose etag https://registry.npmjs.org/@openui5%2fsap.ui.core from cache
+26 verbose get saving @openui5/sap.ui.core to /home/leila/.npm/registry.npmjs.org/_40openui5_252fsap.ui.core/.cache.json
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule @openui5/sap.ui.core@1.68.1 checking installable status
+40 silly cache add args [ '@openui5/sap.ui.core', null ]
+41 verbose cache add spec @openui5/sap.ui.core
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: '@openui5/sap.ui.core',
+42 silly cache add   scope: '@openui5',
+42 silly cache add   name: '@openui5/sap.ui.core',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed @openui5/sap.ui.core@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for @openui5/sap.ui.core
+45 info addNameTag [ '@openui5/sap.ui.core', 'latest' ]
+46 silly mapToRegistry name @openui5/sap.ui.core
+47 silly mapToRegistry scope (from package name) @openui5
+48 verbose mapToRegistry no registry URL found in name for scope @openui5
+49 silly mapToRegistry using default registry
+50 silly mapToRegistry registry https://registry.npmjs.org/
+51 silly mapToRegistry uri https://registry.npmjs.org/@openui5%2fsap.ui.core
+52 verbose addNameTag registry:https://registry.npmjs.org/@openui5%2fsap.ui.core not in flight; fetching
+53 verbose get https://registry.npmjs.org/@openui5%2fsap.ui.core not expired, no request
+54 silly addNameTag next cb for @openui5/sap.ui.core with tag latest
+55 silly addNamed @openui5/sap.ui.core@1.68.1
+56 verbose addNamed "1.68.1" is a plain semver version for @openui5/sap.ui.core
+57 silly cache afterAdd @openui5/sap.ui.core@1.68.1
+58 verbose afterAdd /home/leila/.npm/@openui5/sap.ui.core/1.68.1/package/package.json not in flight; writing
+59 verbose afterAdd /home/leila/.npm/@openui5/sap.ui.core/1.68.1/package/package.json written
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly idealTree:prePrune myapp@1.0.0
+61 silly idealTree:prePrune └── @openui5/sap.ui.core@1.68.1
+62 silly loadIdealTree Finishing
+63 silly currentTree myapp@1.0.0
+64 silly idealTree myapp@1.0.0
+64 silly idealTree └── @openui5/sap.ui.core@1.68.1
+65 silly generateActionsToTake Starting
+66 silly install generateActionsToTake
+67 silly generateActionsToTake Finishing
+68 silly diffTrees action count 1
+69 silly diffTrees add @openui5/sap.ui.core@1.68.1
+70 silly decomposeActions action count 8
+71 silly decomposeActions fetch @openui5/sap.ui.core@1.68.1
+72 silly decomposeActions extract @openui5/sap.ui.core@1.68.1
+73 silly decomposeActions test @openui5/sap.ui.core@1.68.1
+74 silly decomposeActions preinstall @openui5/sap.ui.core@1.68.1
+75 silly decomposeActions build @openui5/sap.ui.core@1.68.1
+76 silly decomposeActions install @openui5/sap.ui.core@1.68.1
+77 silly decomposeActions postinstall @openui5/sap.ui.core@1.68.1
+78 silly decomposeActions finalize @openui5/sap.ui.core@1.68.1
+79 silly executeActions Starting
+80 silly install executeActions
+81 silly doSerial global-install 0
+82 silly doParallel fetch 1
+83 verbose lock using /home/leila/.npm/_locks/staging-af49ab7b10dee48c.lock for /home/leila/eclipse-workspace/MyApp/node_modules/.staging
+84 silly doParallel extract 1
+85 silly extract @openui5/sap.ui.core@1.68.1
+86 verbose unbuild node_modules/.staging/@openui5/sap.ui.core-48a469c5
+87 silly gentlyRm /home/leila/eclipse-workspace/MyApp/node_modules/.staging/@openui5/sap.ui.core-48a469c5 is being purged from base /home/leila/eclipse-workspace/MyApp
+88 verbose gentlyRm don't care about contents; nuking /home/leila/eclipse-workspace/MyApp/node_modules/.staging/@openui5/sap.ui.core-48a469c5
+89 verbose tar unpack /home/leila/.npm/@openui5/sap.ui.core/1.68.1/package.tgz
+90 verbose tar unpacking to /home/leila/eclipse-workspace/MyApp/node_modules/.staging/@openui5/sap.ui.core-48a469c5
+91 silly gentlyRm /home/leila/eclipse-workspace/MyApp/node_modules/.staging/@openui5/sap.ui.core-48a469c5 is being purged
+92 verbose gentlyRm don't care about contents; nuking /home/leila/eclipse-workspace/MyApp/node_modules/.staging/@openui5/sap.ui.core-48a469c5
+93 silly gunzTarPerm modes [ '755', '644' ]
+94 silly gunzTarPerm extractEntry
+95 silly gunzTarPerm extractEntry
+96 silly gunzTarPerm extractEntry
+97 silly gunzTarPerm extractEntry
+98 silly gunzTarPerm extractEntry
+99 silly gunzTarPerm extractEntry
+100 silly gunzTarPerm extractEntry
+101 silly gunzTarPerm extractEntry
+102 silly gunzTarPerm extractEntry
+103 silly gunzTarPerm extractEntry
+104 silly gunzTarPerm extractEntry
+105 silly gunzTarPerm extractEntry
+106 silly gunzTarPerm extractEntry
+107 silly gunzTarPerm extractEntry
+108 silly gunzTarPerm extractEntry
+109 silly gunzTarPerm extractEntry
+110 silly gunzTarPerm extractEntry
+111 silly gunzTarPerm extractEntry
+112 silly gunzTarPerm extractEntry
+113 silly gunzTarPerm extractEntry
+114 silly gunzTarPerm extractEntry
+115 silly gunzTarPerm extractEntry
+116 silly gunzTarPerm extractEntry
+117 silly gunzTarPerm extractEntry
+118 silly gunzTarPerm extractEntry
+119 silly gunzTarPerm extractEntry
+120 silly gunzTarPerm extractEntry
+121 silly gunzTarPerm extractEntry
+122 silly gunzTarPerm extractEntry
+123 silly gunzTarPerm extractEntry
+124 silly gunzTarPerm extractEntry
+125 silly gunzTarPerm extractEntry
+126 silly gunzTarPerm extractEntry
+127 silly gunzTarPerm extractEntry
+128 silly gunzTarPerm extractEntry
+129 silly gunzTarPerm extractEntry
+130 silly gunzTarPerm extractEntry
+131 silly gunzTarPerm extractEntry
+132 silly gunzTarPerm extractEntry
+133 silly gunzTarPerm extractEntry
+134 silly gunzTarPerm extractEntry
+135 silly gunzTarPerm extractEntry
+136 silly gunzTarPerm extractEntry
+137 silly gunzTarPerm extractEntry
+138 silly gunzTarPerm extractEntry
+139 silly gunzTarPerm extractEntry
+140 silly gunzTarPerm extractEntry
+141 silly gunzTarPerm extractEntry
+142 silly gunzTarPerm extractEntry
+143 silly gunzTarPerm extractEntry
+144 silly gunzTarPerm extractEntry
+145 silly gunzTarPerm extractEntry
+146 silly gunzTarPerm extractEntry
+147 silly gunzTarPerm extractEntry
+148 silly gunzTarPerm extractEntry
+149 silly gunzTarPerm extractEntry
+150 silly gunzTarPerm extractEntry
+151 silly gunzTarPerm extractEntry
+152 silly gunzTarPerm extractEntry
+153 silly gunzTarPerm extractEntry
+154 silly gunzTarPerm extractEntry
+155 silly gunzTarPerm extractEntry
+156 silly gunzTarPerm extractEntry
+157 silly gunzTarPerm extractEntry
+158 silly gunzTarPerm extractEntry
+159 silly gunzTarPerm extractEntry
+160 silly gunzTarPerm extractEntry
+161 silly gunzTarPerm extractEntry
+162 silly gunzTarPerm extractEntry
+163 silly gunzTarPerm extractEntry
+164 silly gunzTarPerm extractEntry
+165 silly gunzTarPerm extractEntry
+166 silly gunzTarPerm extractEntry
+167 silly gunzTarPerm extractEntry
+168 silly gunzTarPerm extractEntry
+169 silly gunzTarPerm extractEntry
+170 silly gunzTarPerm extractEntry
+171 silly gunzTarPerm extractEntry
+172 silly gunzTarPerm extractEntry
+173 silly gunzTarPerm extractEntry
+174 silly gunzTarPerm extractEntry
+175 silly gunzTarPerm extractEntry
+176 silly gunzTarPerm extractEntry
+177 silly gunzTarPerm extractEntry
+178 silly gunzTarPerm extractEntry
+179 silly gunzTarPerm extractEntry
+180 silly gunzTarPerm extractEntry
+181 silly gunzTarPerm extractEntry
+182 silly gunzTarPerm extractEntry
+183 silly gunzTarPerm extractEntry
+184 silly gunzTarPerm extractEntry
+185 silly gunzTarPerm extractEntry
+186 silly gunzTarPerm extractEntry
+187 silly gunzTarPerm extractEntry
+188 silly gunzTarPerm extractEntry
+189 silly gunzTarPerm extractEntry
+190 silly gunzTarPerm extractEntry
+191 silly gunzTarPerm extractEntry
+192 silly gunzTarPerm extractEntry
+193 silly gunzTarPerm extractEntry
+194 silly gunzTarPerm extractEntry
+195 silly gunzTarPerm extractEntry
+196 silly gunzTarPerm extractEntry
+197 silly gunzTarPerm extractEntry
+198 silly gunzTarPerm extractEntry
+199 silly gunzTarPerm extractEntry
+200 silly gunzTarPerm extractEntry
+201 silly gunzTarPerm extractEntry
+202 silly gunzTarPerm extractEntry
+203 silly gunzTarPerm extractEntry
+204 silly gunzTarPerm extractEntry
+205 silly gunzTarPerm extractEntry
+206 silly gunzTarPerm extractEntry
+207 silly gunzTarPerm extractEntry
+208 silly gunzTarPerm extractEntry
+209 silly gunzTarPerm extractEntry
+210 silly gunzTarPerm extractEntry
+211 silly gunzTarPerm extractEntry
+212 silly gunzTarPerm extractEntry
+213 silly gunzTarPerm extractEntry
+214 silly gunzTarPerm extractEntry
+215 silly gunzTarPerm extractEntry
+216 silly gunzTarPerm extractEntry
+217 silly gunzTarPerm extractEntry
+218 silly gunzTarPerm extractEntry
+219 silly gunzTarPerm extractEntry
+220 silly gunzTarPerm extractEntry
+221 silly gunzTarPerm extractEntry
+222 silly gunzTarPerm extractEntry
+223 silly gunzTarPerm extractEntry
+224 silly gunzTarPerm extractEntry
+225 silly gunzTarPerm extractEntry
+226 silly gunzTarPerm extractEntry
+227 silly gunzTarPerm extractEntry
+228 silly gunzTarPerm extractEntry
+229 silly gunzTarPerm extractEntry
+230 silly gunzTarPerm extractEntry
+231 silly gunzTarPerm extractEntry
+232 silly gunzTarPerm extractEntry
+233 silly gunzTarPerm extractEntry
+234 silly gunzTarPerm extractEntry
+235 silly gunzTarPerm extractEntry
+236 silly gunzTarPerm extractEntry
+237 silly gunzTarPerm extractEntry
+238 silly gunzTarPerm extractEntry
+239 silly gunzTarPerm extractEntry
+240 silly gunzTarPerm extractEntry
+241 silly gunzTarPerm extractEntry
+242 silly gunzTarPerm extractEntry
+243 silly gunzTarPerm extractEntry
+244 silly gunzTarPerm extractEntry
+245 silly gunzTarPerm extractEntry
+246 silly gunzTarPerm extractEntry
+247 silly gunzTarPerm extractEntry
+248 silly gunzTarPerm extractEntry
+249 silly gunzTarPerm extractEntry
+250 silly gunzTarPerm extractEntry
+251 silly gunzTarPerm extractEntry
+252 silly gunzTarPerm extractEntry
+253 silly gunzTarPerm extractEntry
+254 silly gunzTarPerm extractEntry
+255 silly gunzTarPerm extractEntry
+256 silly gunzTarPerm extractEntry
+257 silly gunzTarPerm extractEntry
+258 silly gunzTarPerm extractEntry
+259 silly gunzTarPerm extractEntry
+260 silly gunzTarPerm extractEntry
+261 silly gunzTarPerm extractEntry
+262 silly gunzTarPerm extractEntry
+263 silly gunzTarPerm extractEntry
+264 silly gunzTarPerm extractEntry
+265 silly gunzTarPerm extractEntry
+266 silly gunzTarPerm extractEntry
+267 silly gunzTarPerm extractEntry
+268 silly gunzTarPerm extractEntry
+269 silly gunzTarPerm extractEntry
+270 silly gunzTarPerm extractEntry
+271 silly gunzTarPerm extractEntry
+272 silly gunzTarPerm extractEntry
+273 silly gunzTarPerm extractEntry
+274 silly gunzTarPerm extractEntry
+275 silly gunzTarPerm extractEntry
+276 silly gunzTarPerm extractEntry
+277 silly gunzTarPerm extractEntry
+278 silly gunzTarPerm extractEntry
+279 silly gunzTarPerm extractEntry
+280 silly gunzTarPerm extractEntry
+281 silly gunzTarPerm extractEntry
+282 silly gunzTarPerm extractEntry
+283 silly gunzTarPerm extractEntry
+284 silly gunzTarPerm extractEntry
+285 silly gunzTarPerm extractEntry
+286 silly gunzTarPerm extractEntry
+287 silly gunzTarPerm extractEntry
+288 silly gunzTarPerm extractEntry
+289 silly gunzTarPerm extractEntry
+290 silly gunzTarPerm extractEntry
+291 silly gunzTarPerm extractEntry
+292 silly gunzTarPerm extractEntry
+293 silly gunzTarPerm extractEntry
+294 silly gunzTarPerm extractEntry
+295 silly gunzTarPerm extractEntry
+296 silly gunzTarPerm extractEntry
+297 silly gunzTarPerm extractEntry
+298 silly gunzTarPerm extractEntry
+299 silly gunzTarPerm extractEntry
+300 silly gunzTarPerm extractEntry
+301 silly gunzTarPerm extractEntry
+302 silly gunzTarPerm extractEntry
+303 silly gunzTarPerm extractEntry
+304 silly gunzTarPerm extractEntry
+305 silly gunzTarPerm extractEntry
+306 silly gunzTarPerm extractEntry
+307 silly gunzTarPerm extractEntry
+308 silly gunzTarPerm extractEntry
+309 silly gunzTarPerm extractEntry
+310 silly gunzTarPerm extractEntry
+311 silly gunzTarPerm extractEntry
+312 silly gunzTarPerm extractEntry
+313 silly gunzTarPerm extractEntry
+314 silly gunzTarPerm extractEntry
+315 silly gunzTarPerm extractEntry
+316 silly gunzTarPerm extractEntry
+317 silly gunzTarPerm extractEntry
+318 silly gunzTarPerm extractEntry
+319 silly gunzTarPerm extractEntry
+320 silly gunzTarPerm extractEntry
+321 silly gunzTarPerm extractEntry
+322 silly gunzTarPerm extractEntry
+323 silly gunzTarPerm extractEntry
+324 silly gunzTarPerm extractEntry
+325 silly gunzTarPerm extractEntry
+326 silly gunzTarPerm extractEntry
+327 silly gunzTarPerm extractEntry
+328 silly gunzTarPerm extractEntry
+329 silly gunzTarPerm extractEntry
+330 silly gunzTarPerm extractEntry
+331 silly gunzTarPerm extractEntry
+332 silly gunzTarPerm extractEntry
+333 silly gunzTarPerm extractEntry
+334 silly gunzTarPerm extractEntry
+335 silly gunzTarPerm extractEntry
+336 silly gunzTarPerm extractEntry
+337 silly gunzTarPerm extractEntry
+338 silly gunzTarPerm extractEntry
+339 silly gunzTarPerm extractEntry
+340 silly gunzTarPerm extractEntry
+341 silly gunzTarPerm extractEntry
+342 silly gunzTarPerm extractEntry
+343 silly gunzTarPerm extractEntry
+344 silly gunzTarPerm extractEntry
+345 silly gunzTarPerm extractEntry
+346 silly gunzTarPerm extractEntry
+347 silly gunzTarPerm extractEntry
+348 silly gunzTarPerm extractEntry
+349 silly gunzTarPerm extractEntry
+350 silly gunzTarPerm extractEntry
+351 silly gunzTarPerm extractEntry
+352 silly gunzTarPerm extractEntry
+353 silly gunzTarPerm extractEntry
+354 silly gunzTarPerm extractEntry
+355 silly gunzTarPerm extractEntry
+356 silly gunzTarPerm extractEntry
+357 silly gunzTarPerm extractEntry
+358 silly gunzTarPerm extractEntry
+359 silly gunzTarPerm extractEntry
+360 silly gunzTarPerm extractEntry
+361 silly gunzTarPerm extractEntry
+362 silly gunzTarPerm extractEntry
+363 silly gunzTarPerm extractEntry
+364 silly gunzTarPerm extractEntry
+365 silly gunzTarPerm extractEntry
+366 silly gunzTarPerm extractEntry
+367 silly gunzTarPerm extractEntry
+368 silly gunzTarPerm extractEntry
+369 silly gunzTarPerm extractEntry
+370 silly gunzTarPerm extractEntry
+371 silly gunzTarPerm extractEntry
+372 silly gunzTarPerm extractEntry
+373 silly gunzTarPerm extractEntry
+374 silly gunzTarPerm extractEntry
+375 silly gunzTarPerm extractEntry
+376 silly gunzTarPerm extractEntry
+377 silly gunzTarPerm extractEntry
+378 silly gunzTarPerm extractEntry
+379 silly gunzTarPerm extractEntry
+380 silly gunzTarPerm extractEntry
+381 silly gunzTarPerm extractEntry
+382 silly gunzTarPerm extractEntry
+383 silly gunzTarPerm extractEntry
+384 silly gunzTarPerm extractEntry
+385 silly gunzTarPerm extractEntry
+386 silly gunzTarPerm extractEntry
+387 silly gunzTarPerm extractEntry
+388 silly gunzTarPerm extractEntry
+389 silly gunzTarPerm extractEntry
+390 silly gunzTarPerm extractEntry
+391 silly gunzTarPerm extractEntry
+392 silly gunzTarPerm extractEntry
+393 silly gunzTarPerm extractEntry
+394 silly gunzTarPerm extractEntry
+395 silly gunzTarPerm extractEntry
+396 silly gunzTarPerm extractEntry
+397 silly gunzTarPerm extractEntry
+398 silly gunzTarPerm extractEntry
+399 silly gunzTarPerm extractEntry
+400 silly gunzTarPerm extractEntry
+401 silly gunzTarPerm extractEntry
+402 silly gunzTarPerm extractEntry
+403 silly gunzTarPerm extractEntry
+404 silly gunzTarPerm extractEntry
+405 silly gunzTarPerm extractEntry
+406 silly gunzTarPerm extractEntry
+407 silly gunzTarPerm extractEntry
+408 silly gunzTarPerm extractEntry
+409 silly gunzTarPerm extractEntry
+410 silly gunzTarPerm extractEntry
+411 silly gunzTarPerm extractEntry
+412 silly gunzTarPerm extractEntry
+413 silly gunzTarPerm extractEntry
+414 silly gunzTarPerm extractEntry
+415 silly gunzTarPerm extractEntry
+416 silly gunzTarPerm extractEntry
+417 silly gunzTarPerm extractEntry
+418 silly gunzTarPerm extractEntry
+419 silly gunzTarPerm extractEntry
+420 silly gunzTarPerm extractEntry
+421 silly gunzTarPerm extractEntry
+422 silly gunzTarPerm extractEntry
+423 silly gunzTarPerm extractEntry
+424 silly gunzTarPerm extractEntry
+425 silly gunzTarPerm extractEntry
+426 silly gunzTarPerm extractEntry
+427 silly gunzTarPerm extractEntry
+428 silly gunzTarPerm extractEntry
+429 silly gunzTarPerm extractEntry
+430 silly gunzTarPerm extractEntry
+431 silly gunzTarPerm extractEntry
+432 silly gunzTarPerm extractEntry
+433 silly gunzTarPerm extractEntry
+434 silly gunzTarPerm extractEntry
+435 silly gunzTarPerm extractEntry
+436 silly gunzTarPerm extractEntry
+437 silly gunzTarPerm extractEntry
+438 silly gunzTarPerm extractEntry
+439 silly gunzTarPerm extractEntry
+440 silly gunzTarPerm extractEntry
+441 silly gunzTarPerm extractEntry
+442 silly gunzTarPerm extractEntry
+443 silly gunzTarPerm extractEntry
+444 silly gunzTarPerm extractEntry
+445 silly gunzTarPerm extractEntry
+446 silly gunzTarPerm extractEntry
+447 silly gunzTarPerm extractEntry
+448 silly gunzTarPerm extractEntry
+449 silly gunzTarPerm extractEntry
+450 silly gunzTarPerm extractEntry
+451 silly gunzTarPerm extractEntry
+452 silly gunzTarPerm extractEntry
+453 silly gunzTarPerm extractEntry
+454 silly gunzTarPerm extractEntry
+455 silly gunzTarPerm extractEntry
+456 silly gunzTarPerm extractEntry
+457 silly gunzTarPerm extractEntry
+458 silly gunzTarPerm extractEntry
+459 silly gunzTarPerm extractEntry
+460 silly gunzTarPerm extractEntry
+461 silly gunzTarPerm extractEntry
+462 silly gunzTarPerm extractEntry
+463 silly gunzTarPerm extractEntry
+464 silly gunzTarPerm extractEntry
+465 silly gunzTarPerm extractEntry
+466 silly gunzTarPerm extractEntry
+467 silly gunzTarPerm extractEntry
+468 silly gunzTarPerm extractEntry
+469 silly gunzTarPerm extractEntry
+470 silly gunzTarPerm extractEntry
+471 silly gunzTarPerm extractEntry
+472 silly gunzTarPerm extractEntry
+473 silly gunzTarPerm extractEntry
+474 silly gunzTarPerm extractEntry
+475 silly gunzTarPerm extractEntry
+476 silly gunzTarPerm extractEntry
+477 silly gunzTarPerm extractEntry
+478 silly gunzTarPerm extractEntry
+479 silly gunzTarPerm extractEntry
+480 silly gunzTarPerm extractEntry
+481 silly gunzTarPerm extractEntry
+482 silly gunzTarPerm extractEntry
+483 silly gunzTarPerm extractEntry
+484 silly gunzTarPerm extractEntry
+485 silly gunzTarPerm extractEntry
+486 silly gunzTarPerm extractEntry
+487 silly gunzTarPerm extractEntry
+488 silly gunzTarPerm extractEntry
+489 silly gunzTarPerm extractEntry
+490 silly gunzTarPerm extractEntry
+491 silly gunzTarPerm extractEntry
+492 silly gunzTarPerm extractEntry
+493 silly gunzTarPerm extractEntry
+494 silly gunzTarPerm extractEntry
+495 silly gunzTarPerm extractEntry
+496 silly gunzTarPerm extractEntry
+497 silly gunzTarPerm extractEntry
+498 silly gunzTarPerm extractEntry
+499 silly gunzTarPerm extractEntry
+500 silly gunzTarPerm extractEntry
+501 silly gunzTarPerm extractEntry
+502 silly gunzTarPerm extractEntry
+503 silly gunzTarPerm extractEntry
+504 silly gunzTarPerm extractEntry
+505 silly gunzTarPerm extractEntry
+506 silly gunzTarPerm extractEntry
+507 silly gunzTarPerm extractEntry
+508 silly gunzTarPerm extractEntry
+509 silly gunzTarPerm extractEntry
+510 silly gunzTarPerm extractEntry
+511 silly gunzTarPerm extractEntry
+512 silly gunzTarPerm extractEntry
+513 silly gunzTarPerm extractEntry
+514 silly gunzTarPerm extractEntry
+515 silly gunzTarPerm extractEntry
+516 silly gunzTarPerm extractEntry
+517 silly gunzTarPerm extractEntry
+518 silly gunzTarPerm extractEntry
+519 silly gunzTarPerm extractEntry
+520 silly gunzTarPerm extractEntry
+521 silly gunzTarPerm extractEntry
+522 silly gunzTarPerm extractEntry
+523 silly gunzTarPerm extractEntry
+524 silly gunzTarPerm extractEntry
+525 silly gunzTarPerm extractEntry
+526 silly gunzTarPerm extractEntry
+527 silly gunzTarPerm extractEntry
+528 silly gunzTarPerm extractEntry
+529 silly gunzTarPerm extractEntry
+530 silly gunzTarPerm extractEntry
+531 silly gunzTarPerm extractEntry
+532 silly gunzTarPerm extractEntry
+533 silly gunzTarPerm extractEntry
+534 silly gunzTarPerm extractEntry
+535 silly gunzTarPerm extractEntry
+536 silly gunzTarPerm extractEntry
+537 silly gunzTarPerm extractEntry
+538 silly gunzTarPerm extractEntry
+539 silly gunzTarPerm extractEntry
+540 silly gunzTarPerm extractEntry
+541 silly gunzTarPerm extractEntry
+542 silly gunzTarPerm extractEntry
+543 silly gunzTarPerm extractEntry
+544 silly gunzTarPerm extractEntry
+545 silly gunzTarPerm extractEntry
+546 silly gunzTarPerm extractEntry
+547 silly gunzTarPerm extractEntry
+548 silly gunzTarPerm extractEntry
+549 silly gunzTarPerm extractEntry
+550 silly gunzTarPerm extractEntry
+551 silly gunzTarPerm extractEntry
+552 silly gunzTarPerm extractEntry
+553 silly gunzTarPerm extractEntry
+554 silly gunzTarPerm extractEntry
+555 silly gunzTarPerm extractEntry
+556 silly gunzTarPerm extractEntry
+557 silly gunzTarPerm extractEntry
+558 silly gunzTarPerm extractEntry
+559 silly gunzTarPerm extractEntry
+560 silly gunzTarPerm extractEntry
+561 silly gunzTarPerm extractEntry
+562 silly gunzTarPerm extractEntry
+563 silly gunzTarPerm extractEntry
+564 silly gunzTarPerm extractEntry
+565 silly gunzTarPerm extractEntry
+566 silly gunzTarPerm extractEntry
+567 silly gunzTarPerm extractEntry
+568 silly gunzTarPerm extractEntry
+569 silly gunzTarPerm extractEntry
+570 silly gunzTarPerm extractEntry
+571 silly gunzTarPerm extractEntry
+572 silly gunzTarPerm extractEntry
+573 silly gunzTarPerm extractEntry
+574 silly gunzTarPerm extractEntry
+575 silly gunzTarPerm extractEntry
+576 silly gunzTarPerm extractEntry
+577 silly gunzTarPerm extractEntry
+578 silly gunzTarPerm extractEntry
+579 silly gunzTarPerm extractEntry
+580 silly gunzTarPerm extractEntry
+581 silly gunzTarPerm extractEntry
+582 silly gunzTarPerm extractEntry
+583 silly gunzTarPerm extractEntry
+584 silly gunzTarPerm extractEntry
+585 silly gunzTarPerm extractEntry
+586 silly gunzTarPerm extractEntry
+587 silly gunzTarPerm extractEntry
+588 silly gunzTarPerm extractEntry
+589 silly gunzTarPerm extractEntry
+590 silly gunzTarPerm extractEntry
+591 silly gunzTarPerm extractEntry
+592 silly gunzTarPerm extractEntry
+593 silly gunzTarPerm extractEntry
+594 silly gunzTarPerm extractEntry
+595 silly gunzTarPerm extractEntry
+596 silly gunzTarPerm extractEntry
+597 silly gunzTarPerm extractEntry
+598 silly gunzTarPerm extractEntry
+599 silly gunzTarPerm extractEntry
+600 silly gunzTarPerm extractEntry
+601 silly gunzTarPerm extractEntry
+602 silly gunzTarPerm extractEntry
+603 silly gunzTarPerm extractEntry
+604 silly gunzTarPerm extractEntry
+605 silly gunzTarPerm extractEntry
+606 silly gunzTarPerm extractEntry
+607 silly gunzTarPerm extractEntry
+608 silly gunzTarPerm extractEntry
+609 silly gunzTarPerm extractEntry
+610 silly gunzTarPerm extractEntry
+611 silly gunzTarPerm extractEntry
+612 silly gunzTarPerm extractEntry
+613 silly gunzTarPerm extractEntry
+614 silly gunzTarPerm extractEntry
+615 silly gunzTarPerm extractEntry
+616 silly gunzTarPerm extractEntry
+617 silly gunzTarPerm extractEntry
+618 silly gunzTarPerm extractEntry
+619 silly gunzTarPerm extractEntry
+620 silly gunzTarPerm extractEntry
+621 silly gunzTarPerm extractEntry
+622 silly gunzTarPerm extractEntry
+623 silly gunzTarPerm extractEntry
+624 silly gunzTarPerm extractEntry
+625 silly gunzTarPerm extractEntry
+626 silly gunzTarPerm extractEntry
+627 silly gunzTarPerm extractEntry
+628 silly gunzTarPerm extractEntry
+629 silly gunzTarPerm extractEntry
+630 silly gunzTarPerm extractEntry
+631 silly gunzTarPerm extractEntry
+632 silly gunzTarPerm extractEntry
+633 silly gunzTarPerm extractEntry
+634 silly gunzTarPerm extractEntry
+635 silly gunzTarPerm extractEntry
+636 silly gunzTarPerm extractEntry
+637 silly gunzTarPerm extractEntry
+638 silly gunzTarPerm extractEntry
+639 silly gunzTarPerm extractEntry
+640 silly gunzTarPerm extractEntry
+641 silly gunzTarPerm extractEntry
+642 silly gunzTarPerm extractEntry
+643 silly gunzTarPerm extractEntry
+644 silly gunzTarPerm extractEntry
+645 silly gunzTarPerm extractEntry
+646 silly gunzTarPerm extractEntry
+647 silly gunzTarPerm extractEntry
+648 silly gunzTarPerm extractEntry
+649 silly gunzTarPerm extractEntry
+650 silly gunzTarPerm extractEntry
+651 silly gunzTarPerm extractEntry
+652 silly gunzTarPerm extractEntry
+653 silly gunzTarPerm extractEntry
+654 silly gunzTarPerm extractEntry
+655 silly gunzTarPerm extractEntry
+656 silly gunzTarPerm extractEntry
+657 silly gunzTarPerm extractEntry
+658 silly gunzTarPerm extractEntry
+659 silly gunzTarPerm extractEntry
+660 silly gunzTarPerm extractEntry
+661 silly gunzTarPerm extractEntry
+662 silly gunzTarPerm extractEntry
+663 silly gunzTarPerm extractEntry
+664 silly gunzTarPerm extractEntry
+665 silly gunzTarPerm extractEntry
+666 silly gunzTarPerm extractEntry
+667 silly gunzTarPerm extractEntry
+668 silly gunzTarPerm extractEntry
+669 silly gunzTarPerm extractEntry
+670 silly gunzTarPerm extractEntry
+671 silly gunzTarPerm extractEntry
+672 silly gunzTarPerm extractEntry
+673 silly gunzTarPerm extractEntry
+674 silly gunzTarPerm extractEntry
+675 silly gunzTarPerm extractEntry
+676 silly gunzTarPerm extractEntry
+677 silly gunzTarPerm extractEntry
+678 silly gunzTarPerm extractEntry
+679 silly gunzTarPerm extractEntry
+680 silly gunzTarPerm extractEntry
+681 silly gunzTarPerm extractEntry
+682 silly gunzTarPerm extractEntry
+683 silly gunzTarPerm extractEntry
+684 silly gunzTarPerm extractEntry
+685 silly gunzTarPerm extractEntry
+686 silly gunzTarPerm extractEntry
+687 silly gunzTarPerm extractEntry
+688 silly gunzTarPerm extractEntry
+689 silly gunzTarPerm extractEntry
+690 silly gunzTarPerm extractEntry
+691 silly gunzTarPerm extractEntry
+692 silly gunzTarPerm extractEntry
+693 silly gunzTarPerm extractEntry
+694 silly gunzTarPerm extractEntry
+695 silly gunzTarPerm extractEntry
+696 silly gunzTarPerm extractEntry
+697 silly gunzTarPerm extractEntry
+698 silly gunzTarPerm extractEntry
+699 silly gunzTarPerm extractEntry
+700 silly gunzTarPerm extractEntry
+701 silly gunzTarPerm extractEntry
+702 silly gunzTarPerm extractEntry
+703 silly gunzTarPerm extractEntry
+704 silly gunzTarPerm extractEntry
+705 silly gunzTarPerm extractEntry
+706 silly gunzTarPerm extractEntry
+707 silly gunzTarPerm extractEntry
+708 silly gunzTarPerm extractEntry
+709 silly gunzTarPerm extractEntry
+710 silly gunzTarPerm extractEntry
+711 silly gunzTarPerm extractEntry
+712 silly gunzTarPerm extractEntry
+713 silly gunzTarPerm extractEntry
+714 silly gunzTarPerm extractEntry
+715 silly gunzTarPerm extractEntry
+716 silly gunzTarPerm extractEntry
+717 silly gunzTarPerm extractEntry
+718 silly gunzTarPerm extractEntry
+719 silly gunzTarPerm extractEntry
+720 silly gunzTarPerm extractEntry
+721 silly gunzTarPerm extractEntry
+722 silly gunzTarPerm extractEntry
+723 silly gunzTarPerm extractEntry
+724 silly gunzTarPerm extractEntry
+725 silly gunzTarPerm extractEntry
+726 silly gunzTarPerm extractEntry
+727 silly gunzTarPerm extractEntry
+728 silly gunzTarPerm extractEntry
+729 silly gunzTarPerm extractEntry
+730 silly gunzTarPerm extractEntry
+731 silly gunzTarPerm extractEntry
+732 silly gunzTarPerm extractEntry
+733 silly gunzTarPerm extractEntry
+734 silly gunzTarPerm extractEntry
+735 silly gunzTarPerm extractEntry
+736 silly gunzTarPerm extractEntry
+737 silly gunzTarPerm extractEntry
+738 silly gunzTarPerm extractEntry
+739 silly gunzTarPerm extractEntry
+740 silly gunzTarPerm extractEntry
+741 silly gunzTarPerm extractEntry
+742 silly gunzTarPerm extractEntry
+743 silly gunzTarPerm extractEntry
+744 silly gunzTarPerm extractEntry
+745 silly gunzTarPerm extractEntry
+746 silly gunzTarPerm extractEntry
+747 silly gunzTarPerm extractEntry
+748 silly gunzTarPerm extractEntry
+749 silly gunzTarPerm extractEntry
+750 silly gunzTarPerm extractEntry
+751 silly gunzTarPerm extractEntry
+752 silly gunzTarPerm extractEntry
+753 silly gunzTarPerm extractEntry
+754 silly gunzTarPerm extractEntry
+755 silly gunzTarPerm extractEntry
+756 silly gunzTarPerm extractEntry
+757 silly gunzTarPerm extractEntry
+758 silly gunzTarPerm extractEntry
+759 silly gunzTarPerm extractEntry
+760 silly gunzTarPerm extractEntry
+761 silly gunzTarPerm extractEntry
+762 silly gunzTarPerm extractEntry
+763 silly gunzTarPerm extractEntry
+764 silly gunzTarPerm extractEntry
+765 silly gunzTarPerm extractEntry
+766 silly gunzTarPerm extractEntry
+767 silly gunzTarPerm extractEntry
+768 silly gunzTarPerm extractEntry
+769 silly gunzTarPerm extractEntry
+770 silly gunzTarPerm extractEntry
+771 silly gunzTarPerm extractEntry
+772 silly gunzTarPerm extractEntry
+773 silly gunzTarPerm extractEntry
+774 silly gunzTarPerm extractEntry
+775 silly gunzTarPerm extractEntry
+776 silly gunzTarPerm extractEntry
+777 silly gunzTarPerm extractEntry
+778 silly gunzTarPerm extractEntry
+779 silly gunzTarPerm extractEntry
+780 silly gunzTarPerm extractEntry
+781 silly gunzTarPerm extractEntry
+782 silly gunzTarPerm extractEntry
+783 silly gunzTarPerm extractEntry
+784 silly gunzTarPerm extractEntry
+785 silly gunzTarPerm extractEntry
+786 silly gunzTarPerm extractEntry
+787 silly gunzTarPerm extractEntry
+788 silly gunzTarPerm extractEntry
+789 silly gunzTarPerm extractEntry
+790 silly gunzTarPerm extractEntry
+791 silly gunzTarPerm extractEntry
+792 silly gunzTarPerm extractEntry
+793 silly gunzTarPerm extractEntry
+794 silly gunzTarPerm extractEntry
+795 silly gunzTarPerm extractEntry
+796 silly gunzTarPerm extractEntry
+797 silly gunzTarPerm extractEntry
+798 silly gunzTarPerm extractEntry
+799 silly gunzTarPerm extractEntry
+800 silly gunzTarPerm extractEntry
+801 silly gunzTarPerm extractEntry
+802 silly gunzTarPerm extractEntry
+803 silly gunzTarPerm extractEntry
+804 silly gunzTarPerm extractEntry
+805 silly gunzTarPerm extractEntry
+806 silly gunzTarPerm extractEntry
+807 silly gunzTarPerm extractEntry
+808 silly gunzTarPerm extractEntry
+809 silly gunzTarPerm extractEntry
+810 silly gunzTarPerm extractEntry
+811 silly gunzTarPerm extractEntry
+812 silly gunzTarPerm extractEntry
+813 silly gunzTarPerm extractEntry
+814 silly gunzTarPerm extractEntry
+815 silly gunzTarPerm extractEntry
+816 silly gunzTarPerm extractEntry
+817 silly gunzTarPerm extractEntry
+818 silly gunzTarPerm extractEntry
+819 silly gunzTarPerm extractEntry
+820 silly gunzTarPerm extractEntry
+821 silly gunzTarPerm extractEntry
+822 silly gunzTarPerm extractEntry
+823 silly gunzTarPerm extractEntry
+824 silly gunzTarPerm extractEntry
+825 silly gunzTarPerm extractEntry
+826 silly gunzTarPerm extractEntry
+827 silly gunzTarPerm extractEntry
+828 silly gunzTarPerm extractEntry
+829 silly gunzTarPerm extractEntry
+830 silly gunzTarPerm extractEntry
+831 silly gunzTarPerm extractEntry
+832 silly gunzTarPerm extractEntry
+833 silly gunzTarPerm extractEntry
+834 silly gunzTarPerm extractEntry
+835 silly gunzTarPerm extractEntry
+836 silly gunzTarPerm extractEntry
+837 silly gunzTarPerm extractEntry
+838 silly gunzTarPerm extractEntry
+839 silly gunzTarPerm extractEntry
+840 silly gunzTarPerm extractEntry
+841 silly gunzTarPerm extractEntry
+842 silly gunzTarPerm extractEntry
+843 silly gunzTarPerm extractEntry
+844 silly gunzTarPerm extractEntry
+845 silly gunzTarPerm extractEntry
+846 silly gunzTarPerm extractEntry
+847 silly gunzTarPerm extractEntry
+848 silly gunzTarPerm extractEntry
+849 silly gunzTarPerm extractEntry
+850 silly gunzTarPerm extractEntry
+851 silly gunzTarPerm extractEntry
+852 silly gunzTarPerm extractEntry
+853 silly gunzTarPerm extractEntry
+854 silly gunzTarPerm extractEntry
+855 silly gunzTarPerm extractEntry
+856 silly gunzTarPerm extractEntry
+857 silly gunzTarPerm extractEntry
+858 silly gunzTarPerm extractEntry
+859 silly gunzTarPerm extractEntry
+860 silly gunzTarPerm extractEntry
+861 silly gunzTarPerm extractEntry
+862 silly gunzTarPerm extractEntry
+863 silly gunzTarPerm extractEntry
+864 silly gunzTarPerm extractEntry
+865 silly gunzTarPerm extractEntry
+866 silly gunzTarPerm extractEntry
+867 silly gunzTarPerm extractEntry
+868 silly gunzTarPerm extractEntry
+869 silly gunzTarPerm extractEntry
+870 silly gunzTarPerm extractEntry
+871 silly gunzTarPerm extractEntry
+872 silly gunzTarPerm extractEntry
+873 silly gunzTarPerm extractEntry
+874 silly gunzTarPerm extractEntry
+875 silly gunzTarPerm extractEntry
+876 silly gunzTarPerm extractEntry
+877 silly gunzTarPerm extractEntry
+878 silly gunzTarPerm extractEntry
+879 silly gunzTarPerm extractEntry
+880 silly gunzTarPerm extractEntry
+881 silly gunzTarPerm extractEntry
+882 silly gunzTarPerm extractEntry
+883 silly gunzTarPerm extractEntry
+884 silly gunzTarPerm extractEntry
+885 silly gunzTarPerm extractEntry
+886 silly gunzTarPerm extractEntry
+887 silly gunzTarPerm extractEntry
+888 silly gunzTarPerm extractEntry
+889 silly gunzTarPerm extractEntry
+890 silly gunzTarPerm extractEntry
+891 silly gunzTarPerm extractEntry
+892 silly gunzTarPerm extractEntry
+893 silly gunzTarPerm extractEntry
+894 silly gunzTarPerm extractEntry
+895 silly gunzTarPerm extractEntry
+896 silly gunzTarPerm extractEntry
+897 silly gunzTarPerm extractEntry
+898 silly gunzTarPerm extractEntry
+899 silly gunzTarPerm extractEntry
+900 silly gunzTarPerm extractEntry
+901 silly gunzTarPerm extractEntry
+902 silly gunzTarPerm extractEntry
+903 silly gunzTarPerm extractEntry
+904 silly gunzTarPerm extractEntry
+905 silly gunzTarPerm extractEntry
+906 silly gunzTarPerm extractEntry
+907 silly gunzTarPerm extractEntry
+908 silly gunzTarPerm extractEntry
+909 silly gunzTarPerm extractEntry
+910 silly gunzTarPerm extractEntry
+911 silly gunzTarPerm extractEntry
+912 silly gunzTarPerm extractEntry
+913 silly gunzTarPerm extractEntry
+914 silly gunzTarPerm extractEntry
+915 silly gunzTarPerm extractEntry
+916 silly gunzTarPerm extractEntry
+917 silly gunzTarPerm extractEntry
+918 silly gunzTarPerm extractEntry
+919 silly gunzTarPerm extractEntry
+920 silly gunzTarPerm extractEntry
+921 silly gunzTarPerm extractEntry
+922 silly gunzTarPerm extractEntry
+923 silly gunzTarPerm extractEntry
+924 silly gunzTarPerm extractEntry
+925 silly gunzTarPerm extractEntry
+926 silly gunzTarPerm extractEntry
+927 silly gunzTarPerm extractEntry
+928 silly gunzTarPerm extractEntry
+929 silly gunzTarPerm extractEntry
+930 silly gunzTarPerm extractEntry
+931 silly gunzTarPerm extractEntry
+932 silly gunzTarPerm extractEntry
+933 silly gunzTarPerm extractEntry
+934 silly gunzTarPerm extractEntry
+935 silly gunzTarPerm extractEntry
+936 silly gunzTarPerm extractEntry
+937 silly gunzTarPerm extractEntry
+938 silly gunzTarPerm extractEntry
+939 silly gunzTarPerm extractEntry
+940 silly gunzTarPerm extractEntry
+941 silly gunzTarPerm extractEntry
+942 silly gunzTarPerm extractEntry
+943 silly gunzTarPerm extractEntry
+944 silly gunzTarPerm extractEntry
+945 silly gunzTarPerm extractEntry
+946 silly gunzTarPerm extractEntry
+947 silly gunzTarPerm extractEntry
+948 silly gunzTarPerm extractEntry
+949 silly gunzTarPerm extractEntry
+950 silly gunzTarPerm extractEntry
+951 silly gunzTarPerm extractEntry
+952 silly gunzTarPerm extractEntry
+953 silly gunzTarPerm extractEntry
+954 silly gunzTarPerm extractEntry
+955 silly gunzTarPerm extractEntry
+956 silly gunzTarPerm extractEntry
+957 silly gunzTarPerm extractEntry
+958 silly gunzTarPerm extractEntry
+959 silly gunzTarPerm extractEntry
+960 silly gunzTarPerm extractEntry
+961 silly gunzTarPerm extractEntry
+962 silly gunzTarPerm extractEntry
+963 silly gunzTarPerm extractEntry
+964 silly gunzTarPerm extractEntry
+965 silly gunzTarPerm extractEntry
+966 silly gunzTarPerm extractEntry
+967 silly gunzTarPerm extractEntry
+968 silly gunzTarPerm extractEntry
+969 silly gunzTarPerm extractEntry
+970 silly gunzTarPerm extractEntry
+971 silly gunzTarPerm extractEntry
+972 silly gunzTarPerm extractEntry
+973 silly gunzTarPerm extractEntry
+974 silly gunzTarPerm extractEntry
+975 silly gunzTarPerm extractEntry
+976 silly gunzTarPerm extractEntry
+977 silly gunzTarPerm extractEntry
+978 silly gunzTarPerm extractEntry
+979 silly gunzTarPerm extractEntry
+980 silly gunzTarPerm extractEntry
+981 silly gunzTarPerm extractEntry
+982 silly gunzTarPerm extractEntry
+983 silly gunzTarPerm extractEntry
+984 silly gunzTarPerm extractEntry
+985 silly gunzTarPerm extractEntry
+986 silly gunzTarPerm extractEntry
+987 silly gunzTarPerm extractEntry
+988 silly gunzTarPerm extractEntry
+989 silly gunzTarPerm extractEntry
+990 silly gunzTarPerm extractEntry
+991 silly gunzTarPerm extractEntry
+992 silly gunzTarPerm extractEntry
+993 silly gunzTarPerm extractEntry
+994 silly gunzTarPerm extractEntry
+995 silly gunzTarPerm extractEntry
+996 silly gunzTarPerm extractEntry
+997 silly gunzTarPerm extractEntry
+998 silly gunzTarPerm extractEntry
+999 silly gunzTarPerm extractEntry
+1000 silly gunzTarPerm extractEntry
+1001 silly gunzTarPerm extractEntry
+1002 silly gunzTarPerm extractEntry
+1003 silly gunzTarPerm extractEntry
+1004 silly gunzTarPerm extractEntry
+1005 silly gunzTarPerm extractEntry
+1006 silly gunzTarPerm extractEntry
+1007 silly gunzTarPerm extractEntry
+1008 silly gunzTarPerm extractEntry
+1009 silly gunzTarPerm extractEntry
+1010 silly gunzTarPerm extractEntry
+1011 silly gunzTarPerm extractEntry
+1012 silly gunzTarPerm extractEntry
+1013 silly gunzTarPerm extractEntry
+1014 silly gunzTarPerm extractEntry
+1015 silly gunzTarPerm extractEntry
+1016 silly gunzTarPerm extractEntry
+1017 silly gunzTarPerm extractEntry
+1018 silly gunzTarPerm extractEntry
+1019 silly gunzTarPerm extractEntry
+1020 silly gunzTarPerm extractEntry
+1021 silly gunzTarPerm extractEntry
+1022 silly gunzTarPerm extractEntry
+1023 silly gunzTarPerm extractEntry
+1024 silly gunzTarPerm extractEntry
+1025 silly gunzTarPerm extractEntry
+1026 silly gunzTarPerm extractEntry
+1027 silly gunzTarPerm extractEntry
+1028 silly gunzTarPerm extractEntry
+1029 silly gunzTarPerm extractEntry
+1030 silly gunzTarPerm extractEntry
+1031 silly gunzTarPerm extractEntry
+1032 silly gunzTarPerm extractEntry
+1033 silly gunzTarPerm extractEntry
+1034 silly gunzTarPerm extractEntry
+1035 silly gunzTarPerm extractEntry
+1036 silly gunzTarPerm extractEntry
+1037 silly gunzTarPerm extractEntry
+1038 silly gunzTarPerm extractEntry
+1039 silly gunzTarPerm extractEntry
+1040 silly gunzTarPerm extractEntry
+1041 silly gunzTarPerm extractEntry
+1042 silly gunzTarPerm extractEntry
+1043 silly gunzTarPerm extractEntry
+1044 silly gunzTarPerm extractEntry
+1045 silly gunzTarPerm extractEntry
+1046 silly gunzTarPerm extractEntry
+1047 silly gunzTarPerm extractEntry
+1048 silly gunzTarPerm extractEntry
+1049 silly gunzTarPerm extractEntry
+1050 silly gunzTarPerm extractEntry
+1051 silly gunzTarPerm extractEntry
+1052 silly gunzTarPerm extractEntry
+1053 silly gunzTarPerm extractEntry
+1054 silly gunzTarPerm extractEntry
+1055 silly gunzTarPerm extractEntry
+1056 silly gunzTarPerm extractEntry
+1057 silly gunzTarPerm extractEntry
+1058 silly gunzTarPerm extractEntry
+1059 silly gunzTarPerm extractEntry
+1060 silly gunzTarPerm extractEntry
+1061 silly gunzTarPerm extractEntry
+1062 silly gunzTarPerm extractEntry
+1063 verbose unlock done using /home/leila/.npm/_locks/staging-af49ab7b10dee48c.lock for /home/leila/eclipse-workspace/MyApp/node_modules/.staging
+1064 silly rollbackFailedOptional Starting
+1065 silly rollbackFailedOptional Finishing
+1066 silly runTopLevelLifecycles Starting
+1067 silly runTopLevelLifecycles Finishing
+1068 silly install printInstalled
+1069 warn myapp@1.0.0 No description
+1070 verbose stack Error: ENOTDIR: not a directory, open '/home/leila/eclipse-workspace/MyApp/node_modules/.staging/@openui5/sap.ui.core-48a469c5/package.json'
+1071 verbose cwd /home/leila/eclipse-workspace/MyApp
+1072 error Linux 4.18.0-25-generic
+1073 error argv "/usr/bin/node" "/usr/bin/npm" "install" "@openui5/sap.ui.core" "--save"
+1074 error node v8.10.0
+1075 error npm  v3.5.2
+1076 error path /home/leila/eclipse-workspace/MyApp/node_modules/.staging/@openui5/sap.ui.core-48a469c5/package.json
+1077 error code ENOTDIR
+1078 error errno -20
+1079 error syscall open
+1080 error ENOTDIR: not a directory, open '/home/leila/eclipse-workspace/MyApp/node_modules/.staging/@openui5/sap.ui.core-48a469c5/package.json'
+1081 error If you need help, you may report this error at:
+1081 error     <https://github.com/npm/npm/issues>
+1082 verbose exit [ -20, true ]
